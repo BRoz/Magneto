@@ -1,0 +1,243 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Magneto</title>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!--[if lt IE 9]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+	<!--[if IE 6]>
+		<link rel='stylesheet'  href='css/ie.css' type='text/css' media='all'> 
+	<![endif]-->
+	<!--[if IE 7]>
+		<link rel='stylesheet'  href='css/ie.css' type='text/css' media='all'> 
+	<![endif]-->
+	<link rel="shortcut icon" href="images/favicon.ico">
+	<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+	
+<link rel="stylesheet" type="text/css" href="style.css">
+<link href="css/jquery.mCustomScrollbar.css" rel="stylesheet" type="text/css" />
+<link href="css/tooltips.css" rel="stylesheet" type="text/css" />
+<link href="css/responsive.css" rel="stylesheet" type="text/css" />
+<link rel='stylesheet' id='camera-css'  href='css/camera.css' type='text/css' media='all'> 
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
+<script>!window.jQuery && document.write(unescape('%3Cscript src="js/jquery-1.7.2.min.js"%3E%3C/script%3E'))</script>
+<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js"></script>
+<script>!window.jQuery.ui && document.write(unescape('%3Cscript src="js/jquery-ui-1.8.21.custom.min.js"%3E%3C/script%3E'))</script>
+<script src="js/jquery.mousewheel.min.js"></script>
+<script src="js/jquery.mCustomScrollbar.js"></script>
+<script type='text/javascript' src='js/jquery.mobile.customized.min.js'></script>
+<script type='text/javascript' src='js/jquery.easing.1.3.js'></script> 
+<script type='text/javascript' src='js/camera.min.js'></script> 
+<script type="text/javascript">
+		jQuery(function(){	
+			jQuery('#camera_wrap').camera({
+			});
+		});
+</script>
+<script type="text/javascript">
+		(function($){
+			$(window).load(function(){
+				$("#content").mCustomScrollbar({
+					scrollButtons:{
+						enable:true
+					}
+				});
+				$("#sidebar").mCustomScrollbar({
+					scrollButtons:{
+						enable:true
+					}
+				});
+			});
+		})(jQuery);
+</script>
+<script type="text/javascript" src="js/jquery.tipsy.js" charset="utf-8"></script>
+	</head>
+<body>
+<div class="sidebar">
+<div class="logo"></div>
+			<div class="sidebar-wrap" id="sidebar">
+
+		<div class="footer">
+		<div class="footer-icons">
+<center><div class="socialstuff">
+   <a href="#">
+    <div class="social facebook foo" original-title="Facebook" social="Facebook">
+    </div>
+  </a>
+  <a href="#">
+    <div class="social twitter foo" original-title="Twitter" social="Twitter">
+    </div>
+  </a>
+  <a href="#">
+    <div class="social youtube foo" original-title="Youtube" social="YouTube">
+    </div>
+  </a>
+  <a href="#">
+    <div class="social linkedin foo" original-title="Linkedin" social="Linkedin">
+    </div>
+  </a>
+  <a href="#">
+    <div class="social flickr foo" original-title="Flickr" social="Flickr">
+    </div>
+  </a>
+  <a href="#">
+    <div class="social rss foo" original-title="RSS" social="RSS">
+    </div>
+  </a>
+</div></center>
+</div>
+		<div class="footer-copyright">Copyright &copy; 2012 - Magneto<br>Proud to be the First</div>
+	
+		</div>
+</div>
+<div class="wrapper">
+<div class="content" id="content">
+<div class="camera_wrap camera_black_skin " id="camera_wrap">
+            <div data-thumb="images/slides/thumbs/bridge.jpg" data-src="images/slides/bridge.jpg">
+                <div class="camera_caption fadeFromBottom">
+                    Camera is a responsive/adaptive slideshow. <em>Try to resize the browser window</em>
+                </div>
+            </div>
+            <div data-thumb="images/slides/thumbs/leaf.jpg" data-src="images/slides/leaf.jpg">
+                <div class="camera_caption fadeFromBottom">
+                    It uses a light version of jQuery mobile, <em>navigate the slides by swiping with your fingers</em>
+                </div>
+            </div>
+        </div>
+
+<div class="grid-wrap">
+    <div class="row">
+        <div class="col g-1of1 g4-1of5">
+            <div class="in">
+
+                <div class="row is-nested">
+                    <div class="col g2-1of1 g3-1of3 g4-1of1">
+                        <div class="in">
+                            <div class="module">
+                                <h1 class="h3">One Third</h1>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad expedita cumque eveniet repudiandae asperiores illo ipsam ea pariatur dicta quia animi repellat quis atque rerum distinctio officia eos vitae cupiditate.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col g2-1of1 g3-1of3 g4-1of1">
+                        <div class="in">
+                            <div class="module">
+                                <h1 class="h3">One Third</h1>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad expedita cumque eveniet repudiandae asperiores illo ipsam ea pariatur dicta quia animi repellat quis atque rerum distinctio officia eos vitae cupiditate.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col g2-1of1 g3-1of3 g4-1of1">
+                        <div class="in">
+                            <div class="module">
+                                <h1 class="h3">One Third</h1>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad expedita cumque eveniet repudiandae asperiores illo ipsam ea pariatur dicta quia animi repellat quis atque rerum distinctio officia eos vitae cupiditate.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="col g-1of1 g4-3of5">
+            <div class="in">
+                
+                <div class="row is-nested">
+                    <div class="col g-1of1 g1-1of2">
+                        <div class="in">
+                            <div class="module">
+                                <h1 class="h3">One Half</h1>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad expedita cumque eveniet repudiandae asperiores illo ipsam ea pariatur dicta quia animi repellat quis atque rerum distinctio officia eos vitae cupiditate.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col g-1of1 g1-1of2">
+                        <div class="in">
+                            <div class="module">
+                                <h1 class="h3">One Half</h1>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad expedita cumque eveniet repudiandae asperiores illo ipsam ea pariatur dicta quia animi repellat quis atque rerum distinctio officia eos vitae cupiditate.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row is-nested">
+                    <div class="col g-1of1 g3-1of3">
+                        <div class="in">
+                            <div class="module">
+                                <h1 class="h3">One Third</h1>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad expedita cumque eveniet repudiandae asperiores illo ipsam ea pariatur dicta quia animi repellat quis atque rerum distinctio officia eos vitae cupiditate.</p>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad expedita cumque eveniet repudiandae asperiores illo ipsam ea pariatur dicta quia animi repellat quis atque rerum distinctio officia eos vitae cupiditate.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col g-1of1 g3-2of3">
+                        <div class="in">
+                            
+                            <div class="row is-nested">
+                                <div class="col g-1of1 g5-1of2">
+                                    <div class="in">
+                                        <div class="module">
+                                            <h1 class="h3">One Half</h1>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad expedita cumque eveniet repudiandae asperiores illo ipsam ea pariatur dicta quia animi repellat quis atque rerum distinctio officia eos vitae cupiditate.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col g-1of1 g5-1of2">
+                                    <div class="in">
+                                        <div class="module">
+                                            <h1 class="h3">One Half</h1>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad expedita cumque eveniet repudiandae asperiores illo ipsam ea pariatur dicta quia animi repellat quis atque rerum distinctio officia eos vitae cupiditate.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row is-nested">
+                                <div class="col g-1of1">
+                                    <div class="in">
+                                        <div class="module">
+                                            <h1 class="h3">Full Width</h1>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad expedita cumque eveniet repudiandae asperiores illo ipsam ea pariatur dicta quia animi repellat quis atque rerum distinctio officia eos vitae cupiditate.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="col g-1of1 g4-1of5">
+            <div class="in">
+                <div class="module">
+                    <h1 class="h3">One Fifth</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad expedita cumque eveniet repudiandae asperiores illo ipsam ea pariatur dicta quia animi repellat quis atque rerum distinctio officia eos vitae cupiditate.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad expedita cumque eveniet repudiandae asperiores illo ipsam ea pariatur dicta quia animi repellat quis atque rerum distinctio officia eos vitae cupiditate.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad expedita cumque eveniet repudiandae asperiores illo ipsam ea pariatur dicta quia animi repellat quis atque rerum distinctio officia eos vitae cupiditate.</p>
+                </div>
+            </div>
+        </div>
+		
+    </div>
+		
+</div>
+</div>
+</div>
+<script type="text/javascript">
+$('li').click(function(){
+  
+  $(this).addClass('active')
+       .siblings()
+       .removeClass('active');
+    
+});</script>
+<script type="text/javascript">$('.foo').tipsy({gravity: 's'});</script>
+</body>
+</html> 

@@ -1,0 +1,112 @@
+<!DOCTYPE>
+<html>
+<head>
+<style>
+/*------ Mixins -----*/
+@mixin border-radiuses($topright: 0, $bottomright: 0, $bottomleft: 0, $topleft: 0) {
+  -webkit-border-top-right-radius:    $topright;
+  -webkit-border-bottom-right-radius: $bottomright;
+  -webkit-border-bottom-left-radius:  $bottomleft;
+  -webkit-border-top-left-radius:     $topleft;
+
+	-moz-border-radius-topright:        $topright;
+	-moz-border-radius-bottomright:     $bottomright;
+	-moz-border-radius-bottomleft:      $bottomleft;
+	-moz-border-radius-topleft:         $topleft;
+
+	border-top-right-radius:            $topright;
+	border-bottom-right-radius:         $bottomright;
+	border-bottom-left-radius:          $bottomleft;
+	border-top-left-radius:             $topleft;
+
+	-moz-background-clip:    padding; 
+	-webkit-background-clip: padding-box; 
+	background-clip:         padding-box; 
+}
+/*--------- End Mixins ---------*/
+.bg {
+  position:fixed;
+  z-index:-999999;
+  left:0;
+  right:0;
+  top:0;
+  bottom:0;
+  background-color:lighten(#b2b2b2,20%);
+  @include box-shadow(inset 0px 0px 100px 15px rgba(183,183,183,.75));
+  background-color: rgb(255,255,255);
+  @include filter-gradient(#ffffff, #e8e8e8, horizontal);
+  @include background-image(radial-gradient(center, ellipse cover, rgba(255,255,255,1) 0%,rgba(232,232,232,1) 100%));
+
+}
+.wrapper {
+  width:500px;
+  margin: 100px auto 0 auto;
+}
+ul {
+  width: 200px;
+  height:46px;
+  margin:0 auto;
+  
+}
+li {
+  border:1px solid darken(#e5e5e5,10%);
+  height:44px;
+  width:44px;
+  display:inline-block;
+  background:#fff;
+  float:left;
+}
+li:nth-of-type(1), .fb {
+  @include border-radiuses(0,0,3px,3px);
+  border-right:0;
+  background:url("http://grantcr.com/files/fbnorm.png") center center no-repeat;
+  background-color:transparent;
+  @include box-shadow(-1px -1px 1px #e2e2e2);
+}
+li:nth-of-type(2), .tw {
+  background:url("http://grantcr.com/files/twnorm.png") center center no-repeat;
+  background-color:transparent;
+  @include box-shadow(0px -1px 1px #e2e2e2);
+}
+li:nth-of-type(3), .rss {
+  @include border-radiuses(3px,3px,0,0);
+  border-left:0;
+  background:url("http://grantcr.com/files/rssnorm.png") center center no-repeat;
+  background-color: transparent;
+  @include box-shadow(1px -1px 1px #e2e2e2);
+}
+
+.fb:hover {
+  background-color:#4463a5;
+  background-image:url("http://grantcr.com/files/fbhover.png");
+  background-position:center center;
+  border-right-color:#e5e5e5;
+  
+}
+.tw:hover {
+  background-color:#0ab4f2;
+  background-image:url("http://grantcr.com/files/twhover.png");
+  background-position:center center;
+  border-color:#e1e1e1;
+}
+.rss:hover {
+  background-color:#ff7e2b;
+  background-image:url("http://grantcr.com/files/rsshover.png");
+  background-position:center center;
+  border-left-color:#e5e5e5;
+}
+
+</style>
+</head>
+<body>
+<div class="bg"></div>
+<div class="wrapper">
+  <ul>
+    <li class="fb"></li>
+    <li class="tw"></li>
+    <li class="rss"></li>
+  </ul>
+  
+</div>
+</body>
+</html>
